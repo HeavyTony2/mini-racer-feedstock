@@ -53,6 +53,7 @@ requirements:
     - types-setuptools >=80.9.0
     - wheel
     - just
+    - rust
     - babel
     - mypy
   run:
