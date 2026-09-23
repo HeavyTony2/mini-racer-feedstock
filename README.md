@@ -13,7 +13,7 @@ Development: https://github.com/bpcreech/PyMiniRacer
 
 Current build status
 ====================
-
+#Rerender
 
 <table><tr>
     <td>GitHub Actions</td>
