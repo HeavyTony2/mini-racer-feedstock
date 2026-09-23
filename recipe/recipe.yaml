@@ -18,11 +18,12 @@ build:
   number: 1
   skip: ppc64le #see issue 18
   script:
-    - if: target_platform == "osx-arm64" or target_platform == "linux-aarch64"
-      then:
-        - just build-dll "--target-cpu=arm64"
-      else:
-        - just build-dll
+    #- if: target_platform == "osx-arm64" or target_platform == "linux-aarch64"
+     # then:
+     #   - just build-dll "--target-cpu=arm64"
+      #else:
+       # - just build-dll
+    - just build-dll
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   dynamic_linking:
     binary_relocation: ${{ false if osx else true }}
